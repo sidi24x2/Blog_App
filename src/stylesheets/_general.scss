@@ -1,0 +1,68 @@
+$primary: #543a14;
+$secondary: #f0bb78;
+$ternary: #fff0dc;
+$black: #fff0dc;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.start {
+  justify-content: start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0.5rem 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.active-nav {
+  color: pink;
+  padding: 0.5rem;
+  background-color: rgba(black, 0.8);
+}
