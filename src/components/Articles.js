@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 function Articles(props) {
-  let { articles } = props;
+  const { articles } = props;
 
   return (
     <>

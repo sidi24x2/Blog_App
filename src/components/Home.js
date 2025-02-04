@@ -2,7 +2,7 @@ import React from 'react';
 import Loader from './Loader';
 import Articles from './Articles';
 import Tags from './Tags';
-import Pagination from './Pagination';
+// import Pagination from './Pagination';
 import FeedBar from './FeedBar';
 
 let articleUrl = '/api/';
@@ -69,7 +69,11 @@ class Home extends React.Component {
             />
 
             <div className="articles flex">
-              {!articles ? <Loader /> : <Articles articles={articles} />}
+              {!articles || articles.length === 0 ? (
+                <Loader />
+              ) : (
+                <Articles articles={articles} />
+              )}
             </div>
           </section>
           <section className="sidebar">
